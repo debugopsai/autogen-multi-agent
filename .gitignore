@@ -1,0 +1,42 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Environment & secrets
+.env
+.env.*
+*.env
+secrets.json
+secrets.yaml
+secrets.yml
+config.local.*
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Excel / output files
+*.xlsx
+*.xls
+*.csv
+
+# MCP / runtime artifacts
+*.tmp
+CLAUDE.md
