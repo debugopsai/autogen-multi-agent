@@ -37,19 +37,23 @@ Copy `.env.example` to `.env` and fill in your values:
 cp .env.example .env
 ```
 
+Then open `.env` and replace each placeholder with your real values. The `.env.example` file is committed to the repo as a reference — never commit `.env` itself.
+
 ## Environment Variables
+
+All variables are defined in `.env.example`. Here is what each one controls:
 
 | Variable | Description |
 |---|---|
-| `OPENROUTER_API_KEY` | API key for OpenRouter (or your LLM provider) |
+| `OPENROUTER_API_KEY` | API key from [openrouter.ai/keys](https://openrouter.ai/keys) |
 | `MYSQL_HOST` | MySQL host (default: `127.0.0.1`) |
 | `MYSQL_PORT` | MySQL port (default: `3306`) |
 | `MYSQL_USER` | MySQL username |
 | `MYSQL_PASSWORD` | MySQL password |
-| `MYSQL_DATABASE` | Target database name |
-| `REST_BASE_URL` | Base URL of the REST API under test |
-| `FILES_DIR` | Directory accessible to the filesystem MCP server |
-| `EXCEL_FILE_PATH` | Absolute path to the output `.xlsx` file |
+| `MYSQL_DATABASE` | Target database name (default: `agentic_db`) |
+| `REST_BASE_URL` | Base URL of the REST API under test — no trailing slash |
+| `FILES_DIR` | Absolute path the filesystem MCP server can access |
+| `EXCEL_FILE_PATH` | Absolute path to the output `.xlsx` file (must exist before running) |
 | `EXCEL_MCP_PAGING_CELLS_LIMIT` | Max cells per page for Excel MCP (default: `4000`) |
 
 ## Running
